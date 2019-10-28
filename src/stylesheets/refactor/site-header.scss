@@ -1,0 +1,28 @@
+.pageHeader {
+  position: absolute;
+  width: 100%;
+  height: 120px;
+}
+
+.superNav {
+  padding: 1rem $std-padding 0.5rem;
+  border-bottom: 1px solid #eceff4;
+}
+
+.pageNav {
+  margin-top: 1rem;
+  padding: 0 $std-padding 1rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pageLogo {
+}
+
+.subnav {
+}
+
+.subnav li {
+  display: inline-block;
+}

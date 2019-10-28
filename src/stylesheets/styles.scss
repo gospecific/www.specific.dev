@@ -1,2 +1,93 @@
 // Load CSS Reset from NPM
-@import "reset-css"
+@import "reset-css";
+
+// Load the constants
+@import "constants";
+
+// Load the BEM styles
+@import "button";
+@import "refactor/hero";
+@import "refactor/site-footer";
+@import "refactor/site-header";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #565b73;
+  font-size: 16px;
+  font-style: normal;
+
+  font-family: 'Gotham SSm A', 'Gotham SSm B', sans-serif;
+  font-family: "Gotham Narrow SSm A", "Gotham Narrow SSm B";
+  font-weight: 300;
+
+  margin: 0;
+}
+
+/* TODO: Refactor the styles below here */
+.pageContent {
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15rem;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 $std-padding;
+  width: 100%;
+}
+
+h1,
+h2,
+.button {
+  font-family: 'Gotham SSm A', 'Gotham SSm B', sans-serif;
+}
+
+h1 > strong {
+  font-weight: 500;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 2.25rem;
+  font-style: normal;
+  line-height: 1.5em;
+  grid-column: col-start / -1;
+}
+
+/*
+h1::before {
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: #771C2B;
+  content: '';
+  margin-bottom: 1rem;
+}
+*/
+
+strong {
+  font-weight: 500;
+}
+
+h2 {
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  grid-gap: $std-padding;
+}
+
+a {
+  text-decoration: none;
+}
