@@ -5,7 +5,9 @@
 @import "constants";
 
 // Load the BEM styles
-@import "button";
+@import 'button';
+@import 'layout';
+@import 'section';
 @import "refactor/hero";
 @import "refactor/site-footer";
 @import "refactor/site-header";
@@ -24,16 +26,8 @@ body {
   margin: 0;
 }
 
-section {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 15rem;
-}
-
-.container {
-  max-width: 1200px;
-  padding: 0 $std-padding;
-  width: 100%;
+p {
+  line-height: 1.75;
 }
 
 h1,
@@ -52,6 +46,7 @@ h1 {
   font-style: normal;
   line-height: 1.5em;
   grid-column: col-start / -1;
+  margin-bottom: 3rem;
 }
 
 /*
@@ -73,15 +68,20 @@ h2 {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  margin-bottom: 2rem;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(12, [col-start] 1fr);
-  grid-gap: $std-padding;
+  margin-bottom: 1rem;
 }
 
 a {
   text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.count-box {
+  text-align: center;
+  padding: 2rem;
+  margin-top: 4rem;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08); // TODO: Make this a constant
 }

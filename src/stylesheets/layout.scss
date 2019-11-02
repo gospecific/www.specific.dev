@@ -1,0 +1,40 @@
+.layout {
+  &__grid {
+    display: grid;
+    grid-gap: $std-padding;
+
+    // split grids
+
+    &--4-s-7 {
+      grid-template-columns: 4fr 1fr 7fr;
+      grid-template-areas: 'sm . lg';
+    }
+
+    &--5-7 {
+      grid-template-columns: 5fr 7fr;
+    }
+
+    &--5-s-6 {
+      grid-template-columns: 5fr 1fr 6fr;
+      grid-template-areas: 'sm . lg';
+    }
+
+    &--6-6 {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    // multicolumn grid
+
+    &--4-4-4 {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    &--3-3-3-3 {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    &--12col {
+      grid-template-columns: repeat(12, 1fr);
+    }
+  }
+}

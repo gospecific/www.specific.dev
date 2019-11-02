@@ -11,10 +11,10 @@
 * Really need to add a margin back to the bottom of the P tag
 * Wire-up the carousel
 * Figure out how to make the hero more interesting
-* Create a copy of the specific logo, but inverted
 * Get the top of "Custom Electronics" and "MODULAR" to line up better
 * I think the unique manufacturable devices count should be a monospaced font (or use tabular characters)
 * Once we have a color palette, use it to color the unique manufacturable devices box
 * Do the footer
 * Change the "Managed Supply Chain" to be a grid. The title could go in the top-left quadrant.
 * Make the homepage responsive
+* Get images to copy over to dist

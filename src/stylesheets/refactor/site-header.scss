@@ -4,11 +4,6 @@
   height: 120px;
 }
 
-.superNav {
-  padding: 1rem $std-padding 0.5rem;
-  border-bottom: 1px solid #eceff4;
-}
-
 .pageNav {
   margin-top: 1rem;
   padding: 0 $std-padding 1rem;
@@ -18,13 +13,9 @@
 }
 
 .pageLogo {
-  // keep
+  width: 180px;
 }
 
 .subnav {
-  // keep
-}
-
-.subnav li {
-  display: inline-block;
+  display: flex;
 }

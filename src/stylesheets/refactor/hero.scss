@@ -1,7 +1,5 @@
 
 .hero {
-  display: flex;
-  justify-content: center;
   color: $color__brand;
   padding: 14em 0; // TODO: make this a constant, since all heros/headers will need it?
   //height: 100vh; // TODO: Make sure the layout still works if I enable this and disable the line above.

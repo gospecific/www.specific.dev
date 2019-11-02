@@ -2,6 +2,10 @@
   color: white;
   background: #1e1e20;
   height: 500px;
-  display: flex;
-  justify-content: center;
+
+  &__link {
+    color: white;
+    display: inline-block;
+    margin: 0.5rem 0;
+  }
 }
