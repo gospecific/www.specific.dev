@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Specific - Custom IoT Electronics</title>
+    <meta name="description" content="" />
+    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7115052/6741812/css/fonts.css" />
+
+    {{ $style := resources.Get "scss/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+  </head>
+
+  <body>
+    {{ block "main" . }}
+    {{ end }}
+    <header class='pageHeader' style='position: absolute;'>
+      <nav class='pageNav'>
+        <img class='pageLogo' src='/images/logo.svg' alt='logo' />
+
+        <ul class='subnav'>
+          <li><a href='/overview.html' class='button'>Overview</a></li>
+          <li><a href='/how-it-works.html' class='button'>How It Works</a></li>
+          <li><a href='/supply-chain.html' class='button'>Supply Chain</a></li>
+          <li><a href='/contact.html' class='button button--blk'>Talk To An Engineer</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class='pageContent'>
+      <main>
+        <header class='hero'>
+          <div class='section__container'> <!-- GROSS -->
+            <h1 style='margin-top: 2rem; grid-row: 1;'><strong>Custom</strong> IoT Electronics</h1>
+
+            <div class='layout__grid layout__grid--4-s-7'>
+              <div style='grid-area: sm;'>
+                <p>
+                  Specify and configure your own,
+                  custom IoT electronics. We engineer,
+                  manufacture, and ship it to you
+                  within <strong>seven business days.</strong>
+                </p>
+
+                <a href='#' class='button button--blk' style='margin-left: 0; width: 150px;'>
+                  Request<br />Access
+                </a>
+              </div>
+
+              <div class='carousel' style='grid-area: lg;'>
+                <img src='/images/gerber.png' style='width: 100%;' />
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <section class='section section--dark'>
+          <div class='section__container layout__grid layout__grid--4-s-7'>
+            <div style='grid-area: sm; color: #555;'>
+              A rocket illustration here might be baller.
+
+              <br />
+              <br />
+
+              It should be a SpaceX rocket. Might want to adjust the margins so the exhaust clouds can sit on the bottom of this box. Oh, use the shot of it arcing way up into the sky. Also, look at my old computer background.
+            </div>
+
+            <div class='section__pane section__pane--tight' style='grid-area: lg;'>
+              <h1>Prototype To Production</h1>
+
+              <p style='line-height: 1.75;'>
+                Specific offers the only electronics solution that can be delivered fast enough for prototyping and
+                in large volume for production.
+
+                <br />
+                <br />
+
+                Build your prototype on the same electronics you will use at volume.
+                Avoid costly re-engineering and development disruptions.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class='section'>
+          <div class='section__container layout__grid layout__grid--5-s-6'>
+            <div class='section__pane' style='grid-area: sm;'>
+              <h1>Custom Electronics</h1>
+
+              <p style='line-height: 1.75;'>
+                <strong>CHANGE THIS</strong>
+                Build your prototype on the same
+                electronics you will use at volume.
+                Avoid costly re-engineering and development
+                disruptions.
+              </p>
+
+              <div class='count-box'>
+                <h2 style='font-size: 12px;'>Unique Manufacturable Devices</h2>
+                <br />
+                <div style='font-size: 3rem;'>89,537,114,558</div>
+                <br />
+                <div style='font-style: italic; font-size: 12px; opacity: 0.75;'>Our system allows for a vast amount of customization</div>
+              </div>
+            </div>
+
+            <div class='section__pane' style='grid-area: lg;'>
+              <h2>Modular</h2>
+              <p style='line-height: 1.75;'>
+              Use our online tools to design your own board. Include only what you want and none of what you don't. Select from our design library of features or extend your board with your own custom circuitry. </p>
+
+              <br />
+              <br />
+              <br />
+
+              <h2>Extensible</h2>
+              <p style='line-height: 1.75;'>
+              Need a feature we haven't anticipated? Want to protect proprietary IP? Specific electronics are open and extensible. Tap into the board's power and data buses to add yor own extensions, daughter cards, or connected devices. </p>
+
+              <br />
+              <br />
+              <br />
+
+              <h2>EE Optional</h2>
+              <p style='line-height: 1.75;'>
+              You don't need in-house electrical engineering experience to build electronics with Specific. We've built it to be used by any developer or technical staff member.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class='section'>
+          <div class='section__container'>
+            <div class='section__pane'>
+              Stuff goes here
+            </div>
+          </div>
+        </section>
+
+        <section class='section section--dark'>
+          <div class='section__container layout__grid layout__grid--4-s-7'>
+            <div style='grid-area: sm; color: #555;'>
+              illustration
+            </div>
+
+            <div class='section__pane--tight' style='grid-area: lg;'>
+              <h1>Security Comes Standard</h1>
+
+              <p style='line-height: 1.75;'>
+                <strong>CHANGE THIS</strong> Specific offers the only hardware solution that can be delivered fast enough for prototyping and
+                in large enough volumes for production. Build your prototype on the same
+                electronics you will use at volume.
+                Avoid costly re-engineering and development
+                disruptions.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class='section'>
+          <div class='section__container'>
+            <div class='section__pane'>
+              <header>
+                <h1>Managed Supply Chain</h1>
+              </header>
+
+              <div class='layout__grid layout__grid--4-4-4'>
+                <div>
+                  <div style='height: 100px; width: 150px; background: #efefef; margin-bottom: 2rem;'></div>
+                  <h2>Seven Day Delivery</h2>
+                  <p style='line-height: 1.75;'>
+                    We ship your custom hardware within seven business days. Iterate faster when prototyping. Tie up less money in inventory at volume with Just-In-Time ordering.
+                  </p>
+                </div>
+
+                <div>
+                  <div style='height: 100px; width: 150px; background: #efefef; margin-bottom: 2rem;'></div>
+                  <h2>Long-Term Availability</h2>
+                  <p style='line-height: 1.75;'>
+                    Your custom electronics are available for a minimum of five years after your first purchase. We manage the suply chain so you don't need to. Avoid unexpected re-engineering and re-certification.
+                  </p>
+                </div>
+
+                <div>
+                  <div style='height: 100px; width: 150px; background: #efefef; margin-bottom: 2rem;'></div>
+                  <h2>Cost Optimized</h2>
+                  <p style='line-height: 1.75;'>
+                    We buy components in volume and pass on the savings. We are able to buy in volumes greater than any one of our customers.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--
+        <section class='section'>
+          <div class='section__container'>
+            <h2>Trusted By</h2>
+            <ul style='display: flex; justify-content: space-between;'>
+              <li><div style='height: 50px; width: 90px; background: #eceff4;'></div></li>
+              <li><div style='height: 50px; width: 90px; background: #eceff4;'></div></li>
+              <li><div style='height: 50px; width: 90px; background: #eceff4;'></div></li>
+              <li><div style='height: 50px; width: 90px; background: #eceff4;'></div></li>
+            </ul>
+          </div>
+        </section>
+        -->
+      </main>
+    </div>
+
+    <!-- Get Started: Not sure if it should go here or in the footer -->
+
+    <footer class='pageFooter'>
+      <div class='section__container layout__grid layout__grid--3-3-3-3'>
+        <div class='section__pane section__pane--tight'>
+          <img src='/images/logo-light.svg' alt='logo' width='180' />
+        </div>
+
+        <div class='section__pane section__pane--tight'>
+          <h2>Electronics</h2>
+
+          <ul>
+            <li><a class='pageFooter__link' href='/privacy'>Overview</a></li>
+            <li><a class='pageFooter__link' href='/privacy'>How It Works</a></li>
+          </ul>
+        </div>
+
+        <div class='section__pane section__pane--tight'>
+          <h2>Solutions</h2>
+
+          <ul>
+            <li><a class='pageFooter__link' href='/privacy'>Supply Chain</a></li>
+          </ul>
+        </div>
+
+        <div class='section__pane section__pane--tight'>
+          <h2>Legal</h2>
+
+          <ul>
+            <li><a class='pageFooter__link' href='/privacy'>Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div style='text-align: center;'>
+        &copy; 2019 - Specific, Inc.
+      </div>
+    </footer>
+  </body>
+</html>

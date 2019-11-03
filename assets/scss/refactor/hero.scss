@@ -1,0 +1,15 @@
+.hero {
+  color: $color__brand;
+  padding: 14em 0; // TODO: make this a constant, since all heros/headers will need it?
+  //height: 100vh; // TODO: Make sure the layout still works if I enable this and disable the line above.
+}
+
+.hero--layout {
+  display: grid;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  grid-template-rows: repeat(2 auto);
+  grid-gap: $std-padding;
+  max-width: 1200px;
+  padding: 0 $std-padding;
+  width: 100%;
+}

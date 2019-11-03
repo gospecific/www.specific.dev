@@ -1,0 +1,23 @@
+.section {
+  position: relative;
+
+  &--dark {
+    background-color: $color__brand;
+    color: white;
+  }
+
+  &__container {
+    max-width: $max-width;
+    padding: 0 $std-padding;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__pane {
+    padding: 8rem 0;
+
+    &--tight {
+      padding: 4rem 0;
+    }
+  }
+}
