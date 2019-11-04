@@ -80,8 +80,10 @@ a {
 }
 
 .count-box {
-  text-align: center;
-  padding: 2rem;
-  margin-top: 4rem;
+  background: #256487;
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08); // TODO: Make this a constant
+  color: #B9E1D6;
+  margin-top: 4rem;
+  padding: 2rem;
+  text-align: center;
 }

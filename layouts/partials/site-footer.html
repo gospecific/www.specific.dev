@@ -1,7 +1,8 @@
+{{ if not .IsHome }}
 <footer class='siteFooter'>
   <div class='section__container layout__grid layout__grid--3-3-3-3'>
     <div class='section__pane section__pane--tight'>
-      <img src='/images/logo-light.svg' alt='logo' width='180' />
+      <a href='/home'><img src='/images/logo-light.svg' alt='logo' width='180' /></a>
     </div>
 
     <div class='section__pane section__pane--tight'>
@@ -34,3 +35,4 @@
     &copy; 2019 - Specific, Inc.
   </div>
 </footer>
+{{ end }}

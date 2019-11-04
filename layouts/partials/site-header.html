@@ -1,6 +1,7 @@
+{{ if not .IsHome }}
 <header class='siteHeader' style='position: absolute;'>
   <nav class='pageNav'>
-    <img class='pageLogo' src='/images/logo.svg' alt='logo' />
+    <a href='/home'><img class='pageLogo' src='/images/logo.svg' alt='logo' /></a>
 
     <div class='subnav'>
       {{ partial "button" (dict "scheme" "clear" "to" "/overview" "label" "Overview") }}
@@ -10,3 +11,4 @@
     </div>
   </nav>
 </header>
+{{ end }}
