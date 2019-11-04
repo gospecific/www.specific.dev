@@ -1,0 +1,12 @@
+<header class='siteHeader' style='position: absolute;'>
+  <nav class='pageNav'>
+    <img class='pageLogo' src='/images/logo.svg' alt='logo' />
+
+    <div class='subnav'>
+      {{ partial "button" (dict "scheme" "clear" "to" "/overview" "label" "Overview") }}
+      {{ partial "button" (dict "scheme" "clear" "to" "/how-it-works" "label" "How It Works") }}
+      {{ partial "button" (dict "scheme" "clear" "to" "/supply-chain" "label" "Supply Chain") }}
+      {{ partial "button" (dict "scheme" "dark" "to" "/contact" "label" "Talk To An Engineer") }}
+    </div>
+  </nav>
+</header>

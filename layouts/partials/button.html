@@ -1,0 +1,7 @@
+<a href='{{ .to }}' class='button button--{{ .scheme }}'>
+  <div>{{ .label | safeHTML }}</div>
+
+  {{ if .caret }}
+    <div><img class='button__icon' src='/images/button-caret.svg' /></div>
+  {{ end }}
+</a>
