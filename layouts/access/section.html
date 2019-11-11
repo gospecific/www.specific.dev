@@ -1,35 +1,10 @@
 {{ define "main" }}
 <header class='hero'>
   <div class='section__container'>
-    <h1 style='margin-top: 2rem;'>Contact Us</h1>
+    <h1 style='margin-top: 2rem;'>Reqest Access</h1>
 
     <div class='layout__grid layout__grid--4-s-7'>
       <div style='grid-area: lg;'>
-        <h1>This is the default Netlify form that doesn't work</h1>
-        <form name='contact' method='POST' data-netlify='true' action='/' enctype='application/x-www-form-urlencoded'>
-          <p>
-            <label>Your Name: <input type='text' name='name' /></label>
-          </p>
-          <p>
-            <label>Your Email: <input type='email' name='email' /></label>
-          </p>
-          <p>
-            <label>Your Role: <select name='role[]' multiple>
-                <option value='leader'>Leader</option>
-                <option value='follower'>Follower</option>
-              </select></label>
-          </p>
-          <p>
-            <label>Message: <textarea name='message'></textarea></label>
-          </p>
-          <p>
-            <button type='submit'>Send</button>
-          </p>
-        </form>
-
-        <br /><br /><br />
-        <br /><br /><br />
-
         <style>
           button {
             border: none;
@@ -57,11 +32,6 @@
           }
         </style>
 
-        <!--
-        <h1>This is a WIP form</h1>
-        -->
-
-        <h2>Talk To An Engineer</h2>
         <form name='engineer' method='POST' data-netlify='true' action='/'>
           <p>
             <input type='text' name='name' placeholder='Name' />
@@ -76,7 +46,10 @@
             <input type='text' name='title' placeholder='Job Title' />
           </p>
           <p>
-            <textarea name='message' placeholder='Question' rows='10'></textarea>
+            <input type='text' name='first' placeholder="Is this your company's first device?" />
+          </p>
+          <p>
+            <textarea name='message' placeholder='Describe your project...' rows='10'></textarea>
           </p>
           <p>
             <button type='submit' class='button button--dark'>
@@ -91,20 +64,7 @@
 
       <div style='grid-area: sm;'>
         <p style='margin-bottom: 3rem;'>
-          We'd be delighted to hear from you. If you have a sales or support question, we recommend you "Talk To An Engineer" by filling out the form on this page. All other means of contact are listed below.
-        </p>
-
-        <h2>General Inquiries</h2>
-        <p style='margin-bottom: 3rem;'>
-          <a href='email:team@specific.dev'>team@specific.dev</a>
-        </p>
-
-        <h2>Mailing Address</h2>
-        <p>
-          Specific, Inc.<br />
-          13 Water St., Suite 2<br />
-          Holliston, MA 01746<br />
-          USA
+          We're launching privately to a small group of customers and we'd love it if you were a part of that group. Fill out the form to give us a sense of your project an we'll get right back to you.
         </p>
       </div>
     </div>

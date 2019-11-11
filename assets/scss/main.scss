@@ -14,6 +14,7 @@
 
 * {
   box-sizing: border-box;
+  line-height: 1.73em;
 }
 
 body {
@@ -27,7 +28,7 @@ body {
 }
 
 p {
-  line-height: 1.75;
+  margin-bottom: 1em;
 }
 
 h1,
@@ -49,17 +50,6 @@ h1 {
   margin-bottom: 3rem;
 }
 
-/*
-h1::before {
-  display: block;
-  width: 100px;
-  height: 4px;
-  background: #771C2B;
-  content: '';
-  margin-bottom: 1rem;
-}
-*/
-
 strong {
   font-weight: 500;
 }
@@ -72,10 +62,15 @@ h2 {
 }
 
 a {
+  outline: none;
   text-decoration: none;
+  color: steelblue;
+  font-weight: 500;
 
   &:hover {
     text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-position: under;
   }
 }
 
