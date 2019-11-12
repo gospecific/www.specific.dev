@@ -4,7 +4,7 @@
   $self: &;
 
   display: grid;
-  grid-template-columns: 1fr 4px 2px 4px 2fr 4px 2px 4px 1fr;
+  grid-template-columns: 2.5fr 4px 2px 4px 6.5fr 4px 2px 4px 3fr; // TODO: Make need to adjust for rl, lr, rr, and ll
   grid-template-rows: 58px 2px 58px;
   margin-top: 2rem;
   margin-bottom: 2rem;
