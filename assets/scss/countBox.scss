@@ -1,8 +1,8 @@
 .countBox {
   @include shadowed;
 
-  background: #256487;
-  color: #B9E1D6;
+  background: $color-g16;
+  color: $color__white;
   padding: 2rem;
   text-align: center;
 
@@ -13,12 +13,13 @@
   &__count {
     font-size: 3rem;
     font-variant-numeric: tabular-nums slashed-zero;
+    font-family: mono;
   }
 
   &__caption {
+    color: $color-g12;
     font-style: italic;
     font-size: 12px;
-    opacity: 0.75;
     margin-top: 1rem;
   }
 }
