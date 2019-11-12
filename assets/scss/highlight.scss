@@ -1,7 +1,7 @@
 .highlight {
   display: grid;
   grid-gap: $std-padding;
-  grid-template-columns: 5fr 1fr 6fr;
+  grid-template-columns: 3fr 1fr 8fr;
   grid-template-areas: 'figure . article';
   align-items: center;
   justify-items: center;
