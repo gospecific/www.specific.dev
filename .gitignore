@@ -1,5 +1,6 @@
 ## Project
 dist/*
+resources/_gen/
 
 ## Node.js
 lib-cov
