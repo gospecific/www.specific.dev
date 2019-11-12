@@ -1,15 +1,17 @@
-{{ if not .IsHome }}
 <header class='siteHeader'>
   <nav class='siteHeader__nav'>
-    <a href='/home'><img class='siteHeader__logo' src='/images/logo.svg' alt='logo' /></a>
+    <a href='/'><img class='siteHeader__logo' src='/images/logo.svg' alt='logo' /></a>
 
     <nav class='siteHeader__subnav'>
       <!-- {{ partial "button" (dict "scheme" "clear" "to" "/overview" "label" "Overview") }} -->
       {{ partial "button" (dict "scheme" "clear" "to" "/how-it-works" "label" "How It Works") }}
       <!-- {{ partial "button" (dict "scheme" "clear" "to" "/supply-chain" "label" "Supply Chain") }} -->
       {{ partial "button" (dict "scheme" "clear" "to" "/pricing" "label" "Pricing") }}
+
+      <!-- TODO: Do this the right way -->
+      <div style='width: 2rem;'></div>
+
       {{ partial "button" (dict "scheme" "dark" "to" "/contact" "label" "Talk To An Engineer") }}
     </nav>
   </nav>
 </header>
-{{ end }}
