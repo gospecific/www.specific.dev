@@ -1,13 +1,94 @@
 {{ define "main" }}
-  <header class='pageHeader pageHeader--text'>
-    <div class='container'>
-      <h1>Pricing</h1>
-    </div>
-  </header>
+<header class='pageHeader pageHeader--text'>
+  <div class='container'>
+    <h1>Pricing</h1>
+  </div>
+</header>
 
-  <section class='section'>
-    <div class='container'>
-      <p>Stuff goes here</p>
+<section class='section'>
+  <div class='container' style='padding-top: 6rem;'>
+    <p>
+      Controlling hardware costs is crucial for IoT businesses. Specifc delivers custom, cost-optimized
+      electroncis
+    </p>
+  </div>
+</section>
+
+<section class='section'>
+  <div class='container' style='margin-top: 4rem;'>
+    <div class='layout__grid layout__grid--5-s-6'>
+      <div style='grid-area: sm;'>
+        <h2 style='margin-bottom: 2rem;'>Pricing Example</h2>
+
+        <p>
+          Specific boards are custom and differ for each customers. The contribution of which microcontroller,
+          features, and accessories you add to the board determines the final price.
+        </p>
+
+        <p>
+          The example on the right shows a sample configuration for an environmental data monitor.
+        </p>
+
+        <h2 style='margin-bottom: 2rem; margin-top: 4rem;'>Volume Orders</h2>
+
+        <p>
+          Traditionally, extremely large orders of over ten thousand units were the only ones that got preferred pricing.
+          We never liked how that penalizes small companies.
+        </p>
+
+        <p>
+          At Specific, we buy components in large quantities so we are able to deliver small orders with the same efficiency
+          as large orders.
+        </p>
+      </div>
+
+      <div style='grid-area: lg;'>
+        <div style='font-family: mono; font-size: 0.75rem; background: #e4edf1; padding: 2rem;'>
+
+          <table style='width: 100%;'>
+            <tr>
+              <td colspan='2'><h2 style='color: #a5b3bd; margin: 0;'>CORE</h2></td>
+            </tr>
+
+            <tr>
+              <td>NXP i.MX 6 with BTLE</td>
+              <td style='text-align: right;'>$30.00</td>
+            </tr>
+
+            <tr>
+              <td colspan='2'><h2 style='color: #a5b3bd; margin: 2rem 0 0;'>Features</h2></td>
+            </tr>
+
+            <tr>
+              <td>Temperature Sensor</td>
+              <td style='text-align: right;'>+ $04.50</td>
+            </tr>
+
+            <tr>
+              <td>Humidity Sensor</td>
+              <td style='text-align: right;'>+ $07.20</td>
+            </tr>
+
+            <tr>
+              <td>SD Card Storage</td>
+              <td style='text-align: right;'>+ $02.85</td>
+            </tr>
+
+            <tr>
+              <td colspan='2'><h2 style='color: #a5b3bd; margin: 2rem 0 0;'>Accessories</h2></td>
+            </tr>
+
+            <tr>
+              <td>1GB SD Card (industrial)</td>
+              <td style='text-align: right;'>+ $29.85</td>
+            </tr>
+
+            <tr>
+              <td style='font-weight: 700; padding-top: 2rem;'>TOTAL</td>
+              <td style='font-weight: 700; padding-top: 2rem; text-align: right;'>$74.40</td>
+          </table>
+        </div>
+      </div>
     </div>
-  </header>
+</section>
 {{ end }}
