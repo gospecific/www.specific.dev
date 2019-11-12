@@ -1,0 +1,38 @@
+.flow {
+  padding-top: 8rem;
+
+  &__ordinal {
+    color: $color-c4;
+  }
+
+  &__step {
+    display: grid;
+    grid-gap: $std-padding;
+    grid-template-columns: 5fr 1fr 6fr;
+    grid-template-areas: 'article . figure';
+    justify-items: center;
+  }
+
+  &__article {
+    grid-area: article;
+    margin: 8rem 0;
+  }
+
+  &__figure {
+    display: grid;
+    grid-area: figure;
+    width: 100%;
+    align-self: center;
+    justify-items: center;
+  }
+
+  &__code {
+    background: $color-c00;
+    color: $color-c9;
+    display: block;
+    padding: $std-padding;
+    font-family: mono;
+    font-size: 0.75rem;
+    line-height: 2em;
+  }
+}

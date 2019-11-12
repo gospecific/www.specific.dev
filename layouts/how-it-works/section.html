@@ -6,7 +6,7 @@
   </header>
 
   <section class='section'>
-    <div class='container'>
+    <div class='container' style='padding-top: 6rem;'>
       <p>
         Specific is a service for specifying, configuring, and purchasing custom electronics in quantities from one to thousands.
         You can use it with or without electrical engineering expertice. Let's explore how our system works and how it can help
@@ -15,178 +15,194 @@
     </div>
   </header>
 
-  <section class='section'>
-    <div class='container layout__grid layout__grid--5-s-6'>
-      <div class='section__pane' style='grid-area: sm;'>
-        <h2>01 It Starts With Your Requirements</h2>
+  <section class='flow'>
+    <section class='section'>
+      <div class='container flow__step'>
+        <article class='flow__article'>
+          <h2><span class='flow__ordinal'>01</span> Start With Your Requirements</h2>
 
-        <p>
-          Building with an off-the-shelf board is for chumps. You are the domain expert.
-          You know what features you want in your board and you know that anything additional
-          will just increase the cost, complexity, and power consumption.
-        </p>
+          <p>
+            Building with an off-the-shelf board is for chumps. You are the domain expert.
+            You know what features you want in your board and you know that anything additional
+            will just increase the cost, complexity, and power consumption.
+          </p>
+        </article>
+
+        <figure class='flow__figure' aria-hidden='true'>
+          <img src='/images/how-it-works/requirements.svg' style='max-width: 100%; transform: rotate(10deg);' />
+        </figure>
       </div>
+    </section>
 
-      <div class='section__pane' style='grid-area: lg;'>
-        Large
+    {{ partial "flowline" . }}
+
+    <section class='section'>
+      <div class='container flow__step'>
+        <article class='flow__article'>
+          <h2><span class='flow__ordinal'>02</span> Select Your Microcontroller</h2>
+
+          <p>
+            All boards start with the microcontroller. Typically, the choice comes down to the intersection
+            of processing power, power consumption, onboard radios (you can always add more though), and what
+            operating system you want to use. You can select a microcontroller from our catalog or use our
+            wizard to find the perfect one for your project.
+          </p>
+        </article>
+
+        <figure class='flow__figure' aria-hidden='true'>
+          <img src='/images/how-it-works/microcontrollers.svg' style='max-width: 100%;' />
+        </figure>
       </div>
-    </div>
-  </section>
+    </section>
 
-  {{ partial "flowline" . }}
+    {{ partial "flowline" (dict "dir" "ll") }}
 
-  <section class='section'>
-    <div class='container layout__grid layout__grid--5-s-6'>
-      <div class='section__pane' style='grid-area: sm;'>
-        <h2>02 Select Your Microcontroller</h2>
+    <section class='section'>
+      <div class='container flow__step'>
+        <article class='flow__article'>
+          <h2><span class='flow__ordinal'>03</span> Add Features</h2>
 
-        <p>
-          All boards start with the microcontroller. Typically, the choice comes down to the intersection
-          of processing power, power consumption, onboard radios (you can always add more though), and what
-          operating system you want to use. You can select a microcontroller from our catalog or use our
-          wizard to find the perfect one for your project.
-        </p>
+          <p>
+            Features add additional functionality to your board. Our catalog of features includes sensors, actuators,
+            storage devices, outputs, radios, and attachment points for adding your own circuitry. Our catalog grows constantly.
+          </p>
+        </article>
+
+        <figure class='flow__figure' aria-hidden='true'>
+          <img src='/images/how-it-works/features.svg' />
+        </figure>
       </div>
+    </section>
 
-      <div class='section__pane' style='grid-area: lg;'>
-        Large
+    {{ partial "flowline" (dict "dir" "lr") }}
+
+    <section class='section'>
+      <div class='container flow__step'>
+        <article class='flow__article'>
+          <h2><span class='flow__ordinal'>04</span> Configure The Board</h2>
+
+          <p>
+            Add accessories, like power supplies, antannaes, or SD cards. If you've developed your firmware already,
+            upload it here and we will flash it to each board during manufacturing.
+          </p>
+
+          <p>
+            When this step is complete, you will have created a specification for your exact board.
+          </p>
+        </article>
+
+        <figure class='flow__figure' aria-hidden='true'>
+          <code class='flow__code'>
+            <pre>
+{
+  name: "Acme Environmental Monitor",
+  microcontroller: "NXPiMX6BTLE",
+  features: [
+    { id: "TMP01R02", pos: 0 },
+    { id: "HUM02R01", pos: 1 },
+    { id: "SDS03R08", pos: 2 }
+  ],
+  accessories: [
+    { id: "SDC1GBI", qty: 1 }
+  ],
+  firmware: "prod_rev2019.10.02.bin"
+}</pre>
+          </code>
+        </figure>
       </div>
-    </div>
-  </section>
+    </section>
 
-  {{ partial "flowline" (dict "dir" "lr") }}
+    {{ partial "flowline" . }}
 
-  <section class='section'>
-    <div class='container layout__grid layout__grid--5-s-6'>
-      <div class='section__pane' style='grid-area: sm;'>
-        <h2>03 Add Features</h2>
+    <section class='section'>
+      <div class='container flow__step'>
+        <article class='flow__article'>
+          <h2><span class='flow__ordinal'>05</span> Place Your Order</h2>
 
-        <p>
-          Features add additional functionality to your board. Our catalog of features includes sensors, actuators,
-          storage devices, outputs, radios, and attachment points for adding your own circuitry. Our catalog grows constantly.
-        </p>
+          <p>
+            You can order small quantities for prototyping or large volumes for production. Return any time to buy additional
+            units, to modify an existing board, or to create a new board.
+          </p>
+        </article>
+
+        <figure class='flow__figure' aria-hidden='true'>
+        </figure>
       </div>
+    </section>
 
-      <div class='section__pane' style='grid-area: lg;'>
-        Large
+    {{ partial "flowline" (dict "dir" "ll") }}
+
+    <section class='section'>
+      <div class='container flow__step'>
+        <article class='flow__article'>
+          <h2><span class='flow__ordinal'>06</span> We Engineer Your Board</h2>
+
+          <p>
+            Your microcontroller and features get combined into a single circuit board and set of manufacturing files. We
+            also generate a custom data sheet, user's manual, and sample application for your board.
+          </p>
+        </article>
+
+        <figure class='flow__figure' aria-hidden='true'>
+          <img src='/images/how-it-works/engineer.svg' />
+        </figure>
       </div>
-    </div>
-  </section>
+    </section>
 
-  {{ partial "flowline" (dict "dir" "ll") }}
+    {{ partial "flowline" . }}
 
-  <section class='section'>
-    <div class='container layout__grid layout__grid--5-s-6'>
-      <div class='section__pane' style='grid-area: sm;'>
-        <h2>04 Configure The Board</h2>
+    <section class='section'>
+      <div class='container flow__step'>
+        <article class='flow__article'>
+          <h2><span class='flow__ordinal'>07</span> Manufacturing</h2>
 
-        <p>
-          Add accessories, like power supplies, antannaes, or SD cards. If you've developed your firmware already,
-          upload it here and we will flash it to each board during manufacturing.
-        </p>
+          <p>
+            The manufacturing files for your electronics get sent directly to our factory where your boards get assembled
+            and tested. If you uploaded firmware, it will get flashed to your device.
+          </p>
+        </article>
 
-        <p>
-          When this step is complete, you will have created a specification for your exact board.
-        </p>
+        <figure class='flow__figure' aria-hidden='true'>
+          <img src='/images/how-it-works/manufacturing.svg' />
+        </figure>
       </div>
+    </section>
 
-      <div class='section__pane' style='grid-area: lg;'>
-        Large
+    {{ partial "flowline" (dict "dir" "ll") }}
+
+    <section class='section'>
+      <div class='container flow__step'>
+        <article class='flow__article'>
+          <h2><span class='flow__ordinal'>08</span> Delivery</h2>
+
+          <p>
+            Within seven business days of placing your order, your boards leave our factory and are shipped directly to your location.
+            We can send them to locations in the US or overseas using a variety of shipping carriers and delivery speeds.
+          </p>
+        </article>
+
+        <figure class='flow__figure' aria-hidden='true'>
+          <img src='/images/how-it-works/shipping.svg' />
+        </figure>
       </div>
-    </div>
-  </section>
+    </section>
 
-  {{ partial "flowline" (dict "dir" "rr") }}
+    {{ partial "flowline" (dict "dir" "lr") }}
 
-  <section class='section'>
-    <div class='container layout__grid layout__grid--5-s-6'>
-      <div class='section__pane' style='grid-area: sm;'>
-        <h2>05 Place Your Order</h2>
+    <section class='section'>
+      <div class='container flow__step'>
+        <article class='flow__article'>
+          <h2><span class='flow__ordinal'>09</span> Complete</h2>
 
-        <p>
-          You can order small quantities for prototyping or large volumes for production. Return any time to buy additional
-          units, to modify an existing board, or to create a new board.
-        </p>
+          <p>
+            Your order is now complete. You can return at any time to order additional quantities or to make modifications to your board.
+          </p>
+        </article>
+
+        <figure class='flow__figure' aria-hidden='true'>
+          <img src='/images/how-it-works/complete.svg' />
+        </figure>
       </div>
-
-      <div class='section__pane' style='grid-area: lg;'>
-        Large
-      </div>
-    </div>
-  </section>
-
-  {{ partial "flowline" . }}
-
-  <section class='section'>
-    <div class='container layout__grid layout__grid--5-s-6'>
-      <div class='section__pane' style='grid-area: sm;'>
-        <h2>06 We Create Your Board</h2>
-
-        <p>
-          Your microcontroller and features get combined into a single circuit board and set of manufacturing files. We
-          also generate a custom data sheet, user's manual, and sample application for your board.
-        </p>
-      </div>
-
-      <div class='section__pane' style='grid-area: lg;'>
-        Large
-      </div>
-    </div>
-  </section>
-
-  {{ partial "flowline" . }}
-
-  <section class='section'>
-    <div class='container layout__grid layout__grid--5-s-6'>
-      <div class='section__pane' style='grid-area: sm;'>
-        <h2>07 Manufacturing</h2>
-
-        <p>
-          The manufacturing files for your electronics get sent directly to our factory where your boards get assembled
-          and tested. If you uploaded firmware, it will get flashed to your device.
-        </p>
-      </div>
-
-      <div class='section__pane' style='grid-area: lg;'>
-        Large
-      </div>
-    </div>
-  </section>
-
-  {{ partial "flowline" . }}
-
-  <section class='section'>
-    <div class='container layout__grid layout__grid--5-s-6'>
-      <div class='section__pane' style='grid-area: sm;'>
-        <h2>08 Delivery</h2>
-
-        <p>
-          Within seven business days of placing your order, your boards leave our factory and are shipped directly to your location.
-          We can send them to locations in the US or overseas using a variety of shipping carriers and delivery speeds.
-        </p>
-      </div>
-
-      <div class='section__pane' style='grid-area: lg;'>
-        Large
-      </div>
-    </div>
-  </section>
-
-  {{ partial "flowline" . }}
-
-  <section class='section'>
-    <div class='container layout__grid layout__grid--5-s-6'>
-      <div class='section__pane' style='grid-area: sm;'>
-        <h2>09 Complete</h2>
-
-        <p>
-          Your order is now complete. You can return at any time to order additional quantities or to make modifications to your board.
-        </p>
-      </div>
-
-      <div class='section__pane' style='grid-area: lg;'>
-        Large
-      </div>
-    </div>
+    </section>
   </section>
 {{ end }}
