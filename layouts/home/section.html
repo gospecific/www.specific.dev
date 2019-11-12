@@ -1,7 +1,9 @@
 {{ define "main" }}
   <header class='pageHeader pageHeader--hero'>
     <div class='container'>
-      <h1><strong>Custom</strong> IoT Electronics</h1>
+      <header class='pageHeader__header'>
+        <h1><strong>Custom</strong> IoT Electronics</h1>
+      </header>
 
       <div class='layout__grid layout__grid--4-s-7'>
         <div class='layout__area--sm'>
@@ -24,33 +26,35 @@
     </div>
   </header>
 
-  <section class='section' style='background: #EAE9E7; background: #1e1e20; color: white;'>
-    <div class='container layout__grid layout__grid--5-s-6'>
-      <div class='layout__area--sm' style='display: flex; justify-content: center; align-items: center;'>
-        <img src='/images/legion.png' style='width: 100%; margin: 4rem 0;' />
-      </div>
-
-      <div class='layout__area--lg section__pane--tight' style='align-self: center;'>
-        <h1>Prototype To Production</h1>
+  <section class='section section--dark'>
+    <div class='container highlight'>
+      <article class='highlight__article'>
+        <header class='highlight__header'>
+          <h1>Prototype To Production</h1>
+        </header>
 
         <p>
           Specific offers the only electronics solution that can be delivered fast enough for prototyping and
           in large volume for production.
+        </p>
 
-          <br />
-          <br />
-
+        <p>
           Build your prototype on the same electronics you will use at volume.
           Avoid costly re-engineering and development disruptions.
         </p>
-      </div>
+      </article>
+
+      <figure class='highlight__figure'>
+      </figure>
     </div>
   </section>
 
   <section class='section'>
-    <div class='container layout__grid layout__grid--5-s-6'>
-      <div class='section__pane' style='grid-area: sm;'>
-        <h1>Custom Electronics</h1>
+    <div class='container benefit benefit--2col'>
+      <article class='benefit__article'>
+        <header class='benefit__header'>
+          <h1>Custom Electronics</h1>
+        </header>
 
         <p>
           <strong>CHANGE THIS</strong>
@@ -60,47 +64,58 @@
           disruptions.
         </p>
 
-        <div class='count-box'>
-          <h2 style='font-size: 12px;'>Unique Manufacturable Devices</h2>
-          <br />
-          <div style='font-size: 3rem;'>10,272,278,170</div>
-          <br />
-          <div style='font-style: italic; font-size: 12px; opacity: 0.75;'>Including one that is specifically for you.</div>
-        </div>
-      </div>
+        <figure class='countBox benefit__unique'>
+          <header>
+            <h2 class='countBox__header'>Unique Manufacturable Devices</h2>
+          </header>
 
-      <div class='section__pane' style='grid-area: lg;'>
-        <h2>Modular</h2>
-        <p>
-          Use our online tools to design your own board. Include only what you want and none of what you don't. Select from our design library of features or extend your board with your own custom circuitry. </p>
+          <div class='countBox__count'>
+            10,272,278,170
+          </div>
 
-        <br />
-        <br />
-        <br />
+          <figcaption class='countBox__caption'>
+            Including one that is specifically for you.
+          </figcaption>
+        </figure>
+      </article>
 
-        <h2>Extensible</h2>
-        <p>
-          Need a feature we haven't anticipated? Want to protect proprietary IP? Specific electronics are open and extensible. Tap into the board's power and data buses to add yor own extensions, daughter cards, or connected devices. </p>
+      <article class='benefit__extra'>
+        <ul class='benefit__list'>
+          <li class='benefit__list-item'>
+            <h2>Modular</h2>
+            <p>
+              Use our online tools to design your own board. Include only what you want and none of what you don't. Select from our design library of features or extend your board with your own custom circuitry.
+            </p>
+          </li>
 
-        <br />
-        <br />
-        <br />
+          <li class='benefit__list-item'>
+            <h2>Extensible</h2>
+            <p>
+              Need a feature we haven't anticipated? Want to protect proprietary IP? Specific electronics are open and extensible. Tap into the board's power and data buses to add yor own extensions, daughter cards, or connected devices.
+            </p>
+          </li>
 
-        <h2>EE Optional</h2>
-        <p>
-          You don't need in-house electrical engineering experience to build electronics with Specific. We've built it to be used by any developer or technical staff member.</p>
-      </div>
+          <li class='benefit__list-item'>
+            <h2>EE Optional</h2>
+            <p>
+              You don't need in-house electrical engineering experience to build electronics with Specific. We've built it to be used by any developer or technical staff member.
+            </p>
+          </li>
+        </ul>
+      </article>
     </div>
   </section>
 
-  <section class='section' style='background: #EAE9E7;'>
-    <div class='container layout__grid layout__grid--5-s-6'>
-      <div class='layout__area--sm' style='display: flex; justify-content: center; align-items: center;'>
-        <img src='/images/helmet.svg' style='height: 300px; margin: 4rem 0;' />
-      </div>
+  <section class='section section--shaded'>
+    <div class='container highlight'>
+      <figure class='highlight__figure'>
+        <img src='/images/helmet.svg' style='height: 300px;' />
+      </figure>
 
-      <div class='layout__area--lg section__pane--tight' style='align-self: center;'>
-        <h1>Security Comes Standard</h1>
+      <article class='highlight__article'>
+        <header class='highlight__header'>
+          <h1>Security Comes Standard</h1>
+        </header>
 
         <p>
           <strong>CHANGE THIS</strong> Specific offers the only hardware solution that can be delivered fast enough for prototyping and
@@ -109,62 +124,58 @@
           Avoid costly re-engineering and development
           disruptions.
         </p>
-      </div>
+      </article>
     </div>
   </section>
 
   <section class='section'>
-    <div class='container'>
-      <div class='section__pane'>
-        <header>
-          <h1>Managed Supply Chain</h1>
-        </header>
+    <div class='container benefit benefit--3col'>
+      <header style='grid-area: header;'>
+        <h1>Managed Supply Chain</h1>
+      </header>
 
-        <div class='layout__grid layout__grid--4-4-4'>
-          <div>
-            <div style='padding: 1rem 0; color: #7DC579; margin-bottom: 2rem; display: flex; align-items: baseline;'>
-              <span style='font-size: 72px; font-weight: 500;'>7</span>
-              <span>days</span>
-            </div>
-
-            <div>
-              <h2>Rapid Delivery</h2>
-              <p>
-                We ship your custom hardware within seven business days. Iterate faster when prototyping. Tie up less money in inventory with Just-In-Time ordering.
-              </p>
-            </div>
-          </div>
-
-          <div>
-            <div style='padding: 1rem 0; color: #7DC579; margin-bottom: 2rem; display: flex; align-items: baseline;'>
-              <span style='font-size: 72px; font-weight: 500;'>5</span>
-              <span>years</span>
-            </div>
-
-            <div>
-              <h2>Long-Term Availability</h2>
-              <p>
-                Your custom electronics are available for a minimum of five years after your first purchase. We manage the suply chain so you don't need to. Avoid unexpected re-engineering and re-certification.
-              </p>
-            </div>
-          </div>
-
-          <div>
-            <div style='padding: 1rem 0; color: #7DC579; margin-bottom: 2rem; display: flex; align-items: baseline;'>
-              <span style='font-size: 72px; font-weight: 500;'>$</span>
-              <span style='font-size: 48px; font-weight: 500;'>$</span>
-              <span style='font-size: 24px; font-weight: 500;'>$</span>
-            </div>
-
-            <div>
-              <h2>Cost Optimized</h2>
-              <p>
-                We buy components in volume and pass on the savings. We are able to buy in volumes greater than any one of our customers.
-              </p>
-            </div>
-          </div>
+      <article style='grid-area: left;'>
+        <div style='padding: 1rem 0; color: #7DC579; margin-bottom: 2rem; display: flex; align-items: baseline;'>
+          <span style='font-size: 72px; font-weight: 500;'>7</span>
+          <span>days</span>
         </div>
-      </div>
+
+        <div>
+          <h2>Rapid Delivery</h2>
+          <p>
+            We ship your custom hardware within seven business days. Iterate faster when prototyping. Tie up less money in inventory with Just-In-Time ordering.
+          </p>
+        </div>
+      </article>
+
+      <article style='grid-area: middle;'>
+        <div style='padding: 1rem 0; color: #7DC579; margin-bottom: 2rem; display: flex; align-items: baseline;'>
+          <span style='font-size: 72px; font-weight: 500;'>5</span>
+          <span>years</span>
+        </div>
+
+        <div>
+          <h2>Long-Term Availability</h2>
+          <p>
+            Your custom electronics are available for a minimum of five years after your first purchase. We manage the suply chain so you don't need to. Avoid unexpected re-engineering and re-certification.
+          </p>
+        </div>
+      </article>
+
+      <article style='grid-area: right;'>
+        <div style='padding: 1rem 0; color: #7DC579; margin-bottom: 2rem; display: flex; align-items: baseline;'>
+          <span style='font-size: 72px; font-weight: 500;'>$</span>
+          <span style='font-size: 48px; font-weight: 500;'>$</span>
+          <span style='font-size: 24px; font-weight: 500;'>$</span>
+        </div>
+
+        <div>
+          <h2>Cost Optimized</h2>
+          <p>
+            We buy components in volume and pass on the savings. We are able to buy in volumes greater than any one of our customers.
+          </p>
+        </div>
+      </article>
     </div>
   </section>
 {{ end }}

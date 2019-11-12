@@ -1,0 +1,43 @@
+.benefit {
+  display: grid;
+  grid-gap: $std-padding;
+
+  &--2col {
+    grid-template-columns: 5fr 1fr 6fr;
+    grid-template-areas: 'left . right';
+  }
+
+  &--3col {
+    grid-template-columns: 4fr 4fr 4fr;
+    grid-template-areas: 'header header header'
+                          'left middle right';
+    grid-template-rows: auto auto;
+  }
+
+  &__header {
+    margin-bottom: $std-padding;
+  }
+
+  &__article {
+    grid-area: left;
+    margin: 8rem 0;
+  }
+
+  &__extra {
+    grid-area: right;
+    margin: 8rem 0;
+  }
+
+  &__list {
+    display: grid;
+    grid-gap: $std-padding * 2;
+    grid-template-columns: 1fr;
+  }
+
+  &__list-item {
+  }
+
+  &__unique {
+    margin-top: $std-padding * 2;
+  }
+}

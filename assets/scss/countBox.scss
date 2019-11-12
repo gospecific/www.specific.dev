@@ -1,0 +1,24 @@
+.countBox {
+  @include shadowed;
+
+  background: #256487;
+  color: #B9E1D6;
+  padding: 2rem;
+  text-align: center;
+
+  &__header {
+    font-size: 12px;
+  }
+
+  &__count {
+    font-size: 3rem;
+    font-variant-numeric: tabular-nums slashed-zero;
+  }
+
+  &__caption {
+    font-style: italic;
+    font-size: 12px;
+    opacity: 0.75;
+    margin-top: 1rem;
+  }
+}

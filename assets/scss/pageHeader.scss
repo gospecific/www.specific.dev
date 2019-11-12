@@ -1,13 +1,17 @@
 .pageHeader {
-  &__tagline {
-    margin-bottom: 3rem;
-  }
-
   &--hero {
     padding: 14em 0;
   }
 
   &--text {
     padding: 10em 0 0 0;
+  }
+
+  &__header {
+    margin-bottom: $std-padding;
+  }
+
+  &__tagline {
+    margin-bottom: $std-padding;
   }
 }

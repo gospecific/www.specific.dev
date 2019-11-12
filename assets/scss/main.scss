@@ -1,5 +1,4 @@
-// Load CSS Reset from NPM
-@import "reset-css";
+@import "reset";
 
 // Load the constants
 @import "constants";
@@ -8,8 +7,11 @@
 @import 'mixins';
 
 // Load the BEM styles
+@import 'benefit';
 @import 'button';
 @import 'container';
+@import 'countBox';
+@import 'highlight';
 @import 'layout';
 @import 'pageHeader';
 @import 'section';
@@ -32,6 +34,10 @@ body {
 
 p {
   margin-bottom: 1em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 h1,
@@ -45,7 +51,6 @@ h1 {
 
   font-size: 2.25rem;
   line-height: 1.5em;
-  margin-bottom: 3rem;
 }
 
 strong {
@@ -72,15 +77,4 @@ a {
     text-decoration-thickness: 2px;
     text-underline-position: under;
   }
-}
-
-// TODO: Break this out somewhere
-.count-box {
-  @include shadowed;
-
-  background: #256487;
-  color: #B9E1D6;
-  margin-top: 4rem;
-  padding: 2rem;
-  text-align: center;
 }

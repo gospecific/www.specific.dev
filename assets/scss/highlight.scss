@@ -1,0 +1,28 @@
+.highlight {
+  display: grid;
+  grid-gap: $std-padding;
+  grid-template-columns: 5fr 1fr 6fr;
+  grid-template-areas: 'figure . article';
+  align-items: center;
+  justify-items: center;
+
+  &__header {
+    grid-area: header;
+    margin-bottom: $std-padding;
+  }
+
+  &__article {
+    grid-area: article;
+    margin: 4rem 0;
+  }
+
+  &__figure {
+    grid-area: figure;
+    margin: 4rem 0;
+  }
+
+  // TODO: This should, probably, be a general image style
+  &__img {
+    width: 100%; // TODO: Make this responsive
+  }
+}
