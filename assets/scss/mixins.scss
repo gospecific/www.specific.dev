@@ -1,0 +1,29 @@
+@mixin font-accent {
+  font-family: 'Gotham SSm A', 'Gotham SSm B', sans-serif;
+}
+
+@mixin font-body {
+  //font-family: 'Gotham SSm A', 'Gotham SSm B', sans-serif;
+  font-family: "Gotham Narrow SSm A", "Gotham Narrow SSm B", sans-serif;
+}
+
+@mixin font-normal {
+  font-weight: 300;
+}
+
+@mixin font-bold {
+  font-weight: 500;
+}
+
+@mixin theme-light {
+  color: $color__brand;
+}
+
+@mixin theme-dark {
+  background-color: $color__brand;
+  color: white;
+}
+
+@mixin shadowed {
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}

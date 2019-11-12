@@ -1,15 +1,16 @@
 .button {
-  display: inline-flex;
-  justify-content: space-between;
+  @include font-bold;
+
   align-items: center;
+  border: none;
+  color: $color__brand;
+  display: inline-flex;
+  font-size: 12px;
+  justify-content: space-between;
+  letter-spacing: 0.05em;
+  line-height: 1.5em;
   padding: 0.75rem 1rem calc(0.75rem - 2px) 1rem;
   text-transform: uppercase;
-  font-weight: 500;
-  font-size: 12px;
-  letter-spacing: 0.05em;
-  color: $color__brand;
-  text-decoration: none;
-  line-height: 1.5em;
 
   &:hover {
     text-decoration: none;
@@ -18,12 +19,11 @@
   &__icon {
     margin-left: 2rem;
     vertical-align: middle;
+    padding-bottom: 3px; // TODO: Figure out why this seems to vertically align the caret
   }
 
   &--dark {
-    background: $color__brand;
-    color: white;
-    font-weight: 500;
-    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08); // TODO: Make this a constant or a mixin
+    @include shadowed;
+    @include theme-dark;
   }
 }

@@ -4,13 +4,17 @@
 // Load the constants
 @import "constants";
 
+// Load the mixins
+@import 'mixins';
+
 // Load the BEM styles
 @import 'button';
-@import 'hero';
+@import 'container';
 @import 'layout';
+@import 'pageHeader';
 @import 'section';
-@import "refactor/site-footer";
-@import "refactor/site-header";
+@import 'siteFooter';
+@import 'siteHeader';
 
 * {
   box-sizing: border-box;
@@ -18,12 +22,11 @@
 }
 
 body {
-  color: #565b73;
+  @include font-body;
+  @include font-normal;
+  @include theme-light;
+
   font-size: 16px;
-  font-style: normal;
-  //font-family: 'Gotham SSm A', 'Gotham SSm B', sans-serif;
-  font-family: "Gotham Narrow SSm A", "Gotham Narrow SSm B", sans-serif;
-  font-weight: 300;
   margin: 0;
 }
 
@@ -34,38 +37,35 @@ p {
 h1,
 h2,
 .button {
-  font-family: 'Gotham SSm A', 'Gotham SSm B', sans-serif;
-}
-
-h1 > strong {
-  font-weight: 500;
+  @include font-accent;
 }
 
 h1 {
-  font-weight: 300;
+  @include font-normal;
+
   font-size: 2.25rem;
-  font-style: normal;
   line-height: 1.5em;
-  grid-column: col-start / -1;
   margin-bottom: 3rem;
 }
 
 strong {
-  font-weight: 500;
+  @include font-bold;
 }
 
 h2 {
-  font-weight: 500;
+  @include font-bold
+
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-bottom: 1rem;
 }
 
 a {
+  @include font-bold
+
   outline: none;
   text-decoration: none;
   color: steelblue;
-  font-weight: 500;
 
   &:hover {
     text-decoration: underline;
@@ -74,9 +74,11 @@ a {
   }
 }
 
+// TODO: Break this out somewhere
 .count-box {
+  @include shadowed;
+
   background: #256487;
-  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08); // TODO: Make this a constant
   color: #B9E1D6;
   margin-top: 4rem;
   padding: 2rem;

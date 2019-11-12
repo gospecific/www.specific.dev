@@ -1,7 +1,8 @@
 .siteFooter {
-  color: white;
-  background: #1e1e20;
-  padding-bottom: 4rem;
+  @include theme-dark;
+
+  margin-top: 8rem;
+  padding: 4rem 0;
 
   &__link {
     color: white;

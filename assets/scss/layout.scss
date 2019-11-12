@@ -37,4 +37,14 @@
       grid-template-columns: repeat(12, 1fr);
     }
   }
+
+  &__area {
+    &--sm {
+      grid-area: sm;
+    }
+
+    &--lg {
+      grid-area: lg;
+    }
+  }
 }

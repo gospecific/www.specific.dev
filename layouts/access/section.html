@@ -1,9 +1,13 @@
 {{ define "main" }}
-<header class='hero'>
-  <div class='section__container'>
-    <h1 style='margin-top: 2rem;'>Reqest Access</h1>
+<header class='pageHeader pageHeader--text'>
+  <div class='container'>
+    <h1>Request Access</h1>
+  </div>
+</header>
 
-    <div class='layout__grid layout__grid--4-s-7'>
+<section class='section'>
+  <div class='container'>
+    <div class='layout__grid layout__grid--5-s-6'>
       <div style='grid-area: lg;'>
         <style>
           button {
@@ -21,7 +25,7 @@
             padding: 1rem 0;
             border-width: 0 0 1px 0;
             border-color: #1e1e20;
-            width: 75%;
+            width: 100%;
           }
 
           textarea {
@@ -32,7 +36,7 @@
           }
         </style>
 
-        <form name='engineer' method='POST' data-netlify='true' action='/'>
+        <form name='access' method='POST' data-netlify='true' action='/' enctype='application/x-www-form-urlencoded'>
           <p>
             <input type='text' name='name' placeholder='Name' />
           </p>
@@ -64,7 +68,7 @@
 
       <div style='grid-area: sm;'>
         <p style='margin-bottom: 3rem;'>
-          We're launching privately to a small group of customers and we'd love it if you were a part of that group. Fill out the form to give us a sense of your project an we'll get right back to you.
+          We're launching privately to a small group of customers. We'd love it if you were a part of that group. Fill out the form to give us a sense of your project an we'll get right back to you.
         </p>
       </div>
     </div>
