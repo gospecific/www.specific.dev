@@ -1,0 +1,82 @@
+.flowLine {
+  @include center-content;
+
+  $self: &;
+
+  display: grid;
+  grid-template-columns: 1fr 4px 2px 4px 2fr 4px 2px 4px 1fr;
+  grid-template-rows: 58px 2px 58px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  &__top {
+    background: url(/images/conn_top.svg);
+    grid-row: 1 / 3;
+  }
+
+  &__horiz {
+    background: url(/images/conn_horiz.svg);
+    grid-row: 2;
+  }
+
+  &__bottom {
+    background: url(/images/conn_bottom.svg);
+    grid-row: 2 / 4;
+  }
+
+  &--rl {
+    #{ $self }__top {
+      grid-column: 6 / 9;
+    }
+
+    #{ $self }__horiz {
+      grid-column: 3 / 8;
+    }
+
+    #{ $self }__bottom {
+      grid-column: 2 / 5;
+    }
+  }
+
+  &--lr {
+    #{ $self }__top {
+      grid-column: 2 / 5;
+    }
+
+    #{ $self }__horiz {
+      grid-column: 3 / 8;
+    }
+
+    #{ $self }__bottom {
+      grid-column: 6 / 9;
+    }
+  }
+
+  &--ll {
+    #{ $self }__top {
+      grid-column: 2 / 5;
+    }
+
+    #{ $self }__horiz {
+      grid-column: 3 / 4;
+    }
+
+    #{ $self }__bottom {
+      grid-column: 2 / 5;
+    }
+  }
+
+  &--rr {
+    #{ $self }__top {
+      grid-column: 6 / 9;
+    }
+
+    #{ $self }__horiz {
+      grid-column: 7 / 8;
+    }
+
+    #{ $self }__bottom {
+      grid-column: 6 / 9;
+    }
+  }
+}

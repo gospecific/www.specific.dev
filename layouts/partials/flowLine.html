@@ -1,0 +1,11 @@
+{{ $dir := "rl" }}
+
+{{ if isset $ "dir" }}
+  {{ $dir = .dir }}
+{{ end }}
+
+<div class='flowLine flowLine--{{ $dir }}' aria-hidden='false'>
+  <div class='flowLine__top'></div>
+  <div class='flowLine__horiz'></div>
+  <div class='flowLine__bottom'></div>
+</div>
